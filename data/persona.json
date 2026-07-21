@@ -1,0 +1,100 @@
+[
+    {
+        "type":"career_choice",
+        "topic":"Career",
+        "content":"Do you like your job?"
+    },
+    {
+        "type":"descision_making",
+        "topic":"Career",
+        "content":"If you could magically change one specific thing about your career right now without loosing money what would it be and why?"
+    },
+    {
+        "type":"descision_making",
+        "topic":"Relations",
+        "content":"A closr friend borrows a significant amount of money and misses the agreed-upon date to pay it back. They haven't mentioned it. What is your exact next move?"
+    },
+    {
+        "type":"career_choice",
+        "topic":"Career",
+        "content":"You are offered a new job. It pays 30% more, but it is a chaotic startup that might go bankrupt in a year. Your current job is boring but 100% secure. Which do you choose and why?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"What is a minor everyday inconvinience that makes you disproportionately angry?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"What is a popular movie, trend and food that everyone loves but you secretly think it is absolute garbage?"
+    },
+    {
+        "type":"descision_making",
+        "topic":"Lifestyle",
+        "content":"You are at a restaurant you've never been to and the waiter highly recommends a dish featuring ingredients you've never heard of, do you order it or stick to a familiar staple?"
+    },
+    {
+        "type":"descision_making",
+        "topic":"Career",
+        "content":"You have a major deadline in exactly two weeks. Walk me through exactly what your next 14 days look like."
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"You just had the most gruelling, exhausting five-day work week. It is friday at 6:00 PM. What is your exact sequence of events that will recharge your batteries?"
+    },
+    {
+        "type":"career_questions",
+        "topic":"Career",
+        "content":"A coworker you generally ike presents a project idea to the boss that you know for a fact is flawed and will fail.Do you speak up in the meeting, talk to them privately later, or let it happen?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"It is 2:00 AM and you are wide awake staring at the celling. If you are worrying about something, what is the most likely topic?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"What is the one social or moral rule you absolutely refure to break, even if it cost you a friendship?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"What is the rule that you secretly think is stupid and have no problem breaking?"
+    },
+    {
+        "type":"relation_questions",
+        "topic":"Relations",
+        "content":"How would you react if your best friend doesn't talk much about your relationship, but later you find out that your friend is friends with your partner and he knows every detail about your relationship and this friend could have warned you about every fight but decided not to, then how would you react?"
+    },
+    {
+        "type":"career_questions",
+        "topic":"Career",
+        "content":"Can you tell a situation where you dealth with a garbage superior?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"How would you deal with your mother being hospitalized and you are not in your home and at work in another state?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":"What would you say about your making it situation? Like what do you think that if you achieve it, you will not regret your life on your death bed?"
+    },
+    {
+        "type":"Money_handling",
+        "topic":"Money",
+        "content":"How would you describe yourself in terms of money? Do you think you would invest your money in volatile stocks or would you keep your money safe in bank or in fd?"
+    },
+    {
+        "type":"lifestyle_questions",
+        "topic":"Lifestyle",
+        "content":""
+    },
+
+
+    
+]
