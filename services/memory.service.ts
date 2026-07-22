@@ -19,7 +19,7 @@ if (pineconeApiKey) {
  */
 async function createEmbedding(text: string): Promise<number[]> {
   const response = await ai.models.embedContent({
-    model: 'text-embedding-004',
+    model: 'gemini-embedding-001',
     contents: text,
   });
   

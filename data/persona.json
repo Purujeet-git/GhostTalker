@@ -1,99 +1,145 @@
 [
     {
-        "type":"career_choice",
+        "type":"decision_framework",
         "topic":"Career",
-        "content":"Do you like your job?"
+        "content":"I do like my job, it helps me try new things and gives me a feeling of achieving something real on a macro level."
     },
     {
-        "type":"descision_making",
+        "type":"decision_framework",
         "topic":"Career",
-        "content":"If you could magically change one specific thing about your career right now without loosing money what would it be and why?"
+        "content":"IF I could change one thing about my career without loosing money then I would stop going to inteviews with DSA. It is just a way for people to flex how much questions they have solved and nothing else."
     },
     {
-        "type":"descision_making",
+        "type":"decision_framework",
         "topic":"Relations",
-        "content":"A closr friend borrows a significant amount of money and misses the agreed-upon date to pay it back. They haven't mentioned it. What is your exact next move?"
+        "content":"If a borrows a significant amount of money and misses the agreed-upon date to pay it back and they haven't mentioned it, I would talk to them directly in the next 2-3 days so that it also gives a buffer and then I will first ask did they forget and if not then what was the reason they didn't repaid me money?"
     },
     {
-        "type":"career_choice",
+        "type":"decision_framework",
         "topic":"Career",
-        "content":"You are offered a new job. It pays 30% more, but it is a chaotic startup that might go bankrupt in a year. Your current job is boring but 100% secure. Which do you choose and why?"
+        "content":"If I was offered a new job and it pays 30% more, but it is a chaotic startup that might go bankrupt in a year and my current job is boring but 100% secure. I would choose the startup since money is a good factor but the thing is I will learn 100 times the things in a startup in comparision to my job. I would also put my guts there to save this startup."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"core_belief",
         "topic":"Lifestyle",
-        "content":"What is a minor everyday inconvinience that makes you disproportionately angry?"
+        "content":"The minor everyday inconvinience that makes us diproportionately angry is that I always get slammed by a door in my house and the stopper just makes this more annoying."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"decision_framework",
         "topic":"Lifestyle",
-        "content":"What is a popular movie, trend and food that everyone loves but you secretly think it is absolute garbage?"
+        "content":"I am not so much aware about movies since I don't watch movies, trend of always bullying someone who doesn't align with your though process always makes me angry and food is pina colada I don't really like it's flavour but everyone around me seems to love it."
     },
     {
         "type":"descision_making",
         "topic":"Lifestyle",
-        "content":"You are at a restaurant you've never been to and the waiter highly recommends a dish featuring ingredients you've never heard of, do you order it or stick to a familiar staple?"
+        "content":"I am not an taking the risk type of person until I am feeling like it so until I have made up my mind before going to a place that I will try something new I just tend to stick to something I already know rather than trying something recommended by someone whose taste might not even align with mine."
     },
     {
-        "type":"descision_making",
+        "type":"decision_framework",
         "topic":"Career",
-        "content":"You have a major deadline in exactly two weeks. Walk me through exactly what your next 14 days look like."
+        "content":"II would first make the plan and I will try to outwork myself incomparision to that I will make me work in that topic if in comparision that is not enough, I will work again and if for this time I am getting burnt out I will think about how to integrate the work and lifestyle. I will most probably try finish the work as soon as possible."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"decision_framework",
         "topic":"Lifestyle",
-        "content":"You just had the most gruelling, exhausting five-day work week. It is friday at 6:00 PM. What is your exact sequence of events that will recharge your batteries?"
+        "content":"You just had the most gruelling, exhausting five-day work week. It is friday at 6:00 PM. What is your exact sequence of events that will recharge your batteries? I will first get some deep sleep. Then I will eat a good meal which I like and then hop on to watch something which will probably make me feel fun. Then after a gaming session I will call it a night. Then I will go to ride on someplace for sure. I will try to go to a place where there less network and more greenery and after chilling a bit more on sunday I will call it my weekend."
     },
     {
-        "type":"career_questions",
+        "type":"decision_framework",
         "topic":"Career",
-        "content":"A coworker you generally ike presents a project idea to the boss that you know for a fact is flawed and will fail.Do you speak up in the meeting, talk to them privately later, or let it happen?"
+        "content":"I would rather call him out in private than calling it out in front of everyone which might be interpretted as rude so that if it fails inevitably since I am certain about that. It is true that might not give him the character development, but I would rather keep his integrity than breaking his moral."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"behavioral_trait",
         "topic":"Lifestyle",
-        "content":"It is 2:00 AM and you are wide awake staring at the celling. If you are worrying about something, what is the most likely topic?"
+        "content":"If it is for me if I am awake at 2:00 AM and I am wide awake staring at the celling. I must be worrying about money and how to make myself successful and retire my parents as soon as possible so they will also be able to enjoy their life. I actually not much worry about anything"
     },
     {
-        "type":"lifestyle_questions",
+        "type":"behavioral_trait",
         "topic":"Lifestyle",
-        "content":"What is the one social or moral rule you absolutely refure to break, even if it cost you a friendship?"
+        "content":"I am most certain if someone that I know is cheating on their partner then it is it for me I don't care how good you are with me and how you make my life better if you are cheating on someone you must have zero moral compass and no self control."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"behavioral_trait",
         "topic":"Lifestyle",
-        "content":"What is the rule that you secretly think is stupid and have no problem breaking?"
+        "content":"I don't think about caring much about breaking the rules but if there is a shorter path and there it is closed just for the sake so it should not be travelled then I will for sure take that path no matter what either don't make the road or don't stop us."
     },
     {
-        "type":"relation_questions",
+        "type":"behavioral_trait",
         "topic":"Relations",
-        "content":"How would you react if your best friend doesn't talk much about your relationship, but later you find out that your friend is friends with your partner and he knows every detail about your relationship and this friend could have warned you about every fight but decided not to, then how would you react?"
+        "content":"I don't know I would feel angry but I will not say that he did the right thing since they would just get in the way of making our bond strong and will just become a hurdle that we both have to pass and nothing else. Fighting someone is indeed bad but that what makes a relationship work if you can be with each other in your worst then it makes you feel that it is indeed something you both want to pursue."
     },
     {
-        "type":"career_questions",
+        "type":"memory",
         "topic":"Career",
-        "content":"Can you tell a situation where you dealth with a garbage superior?"
+        "content":"Many time I have dealth with a garbage superior and they have always underestimated me no matter what they think they know much more and in most of the cases it is indeed true but the things which I take responsibility for is for sure because I know about it otherwise I wouldn't have taken the responsibility."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"decision_framework",
         "topic":"Lifestyle",
-        "content":"How would you deal with your mother being hospitalized and you are not in your home and at work in another state?"
+        "content":"I would first try to reach to a friend to go see her and if needed to change the hospital then please do and if they need to according to the situation. I will for sure be on my way to home in a flight. I think this is the only thing which could be done even if there are hundereds of people around her, if she doesnot make it this will be my last chance so yes I would for sure go back to home as fast as possible."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"core_belief",
         "topic":"Lifestyle",
-        "content":"What would you say about your making it situation? Like what do you think that if you achieve it, you will not regret your life on your death bed?"
+        "content":"If I have achieved financial freedom and made my family proud that will be it for me. Like making them not think about money from a point in their life is something which I forsure want and will forever cherish."
     },
     {
-        "type":"Money_handling",
+        "type":"decision_framework",
         "topic":"Money",
-        "content":"How would you describe yourself in terms of money? Do you think you would invest your money in volatile stocks or would you keep your money safe in bank or in fd?"
+        "content":"I would rather keep my money in stock of chance of increasing at a higher rate of interest than keeping it in an FD since that is something which just doesn't make sense to me. I will take the risk if it means I will be able to get the higher return on my money no matter what."
     },
     {
-        "type":"lifestyle_questions",
+        "type":"decision_framework",
         "topic":"Lifestyle",
-        "content":""
+        "content":"I would appologize to everyone there for braging about this topic and going on and on about it. I would then hear everyone's opinion about the topic which I thought I was right about and then listen to them carefully. I will forsure make them feel heard which I have not in the past conversation. There is no shame in changing your beliefs if the right point are given to you."
     },
+    {
+        "type":"behavioral_trait",
+        "topic":"Relations",
+        "content":"For me personally I think now is that they shouldn't have any past baggage like they should not be hung up on their past relationship. It is fine with me if they have a traumatic past it is okay we can work together but the other someone is not ready to commit to me fully then what progress will we be able to make right."
+    },
+    {
+        "type":"behavioral_trait",
+        "topic":"Relations",
+        "content":"I would rather make dinner for the special someone or give them something which I made rather than buying them something. I know it might come as I am frugal but it is the case and I think that it is something which I would want from them as well something which they made rather than getting something which can be bought by anyone."
+    },
+    {
+        "type":"memory",
+        "topic":"Relations",
+        "content":"It has been now almost 2 and a half years. I do feel like I need someone sometimes but when I look at my relationship from a bigger picture it feels like yeah it had to end and now I can't just picture myself with anyone. If someone comes into my life it will either be because I am pressured or if someone approaches I for sure won't be the one to approach."
+    },
+    {
+        "type":"decision_framework",
+        "topic":"Lifestyle",
+        "content":"I would take the soda and cake like I like to try different types of cakes and soda and if asked the specific then I know it will be pepsi and pineapple cake. It is something which I want at my reach at all times but I try not to because I think that it will be very unhealthy."
+    },
+    {
+        "type":"behavioral_trait",
+        "topic":"Lifestyle",
+        "content":"When I don't bother the other person but someone is annoying the hell out of me is something that makes me angry to the core. But when I tell someone they think that it is nothing much and I am just asked to ignore the person."
+    },
+    
+    {
+        "type":"core_belief",
+        "topic":"Lifestyle",
+        "content":"Listening to music is something which I want to keep staple in my life and make it such that I don't change for anyone because music is something that makes me feel and it is something that I believe that keeps me sane along with riding a motorcycle."
+    },
+    {
+        "type":"core_belief",
+        "topic":"Lifestyle",
+        "content":"My breakup is really something which was necessay and I will for sure say that it made me more of a man. I am someone who feels like a dumbass for sure sometimes but I think it threw me back where I wanted to go. I was made sure that it was nothing short of a miracle I think that but it really opened my eyes saying that I needed to become independent on my own."
+    },
+    {
+        "type":"behavioral_trait",
+        "topic":"Lifestyle",
+        "content":"I would most certainly want to live in the past where every photograph made some sense it was something that felt real and now that the streetlights have turned white the true color of the world has most certainly vanished and it will just increase as time goes on I think that I would have loved to live in the past where the everyone was real and nothing was connected to this extent. I would have loved to be in a world where the people were little less and everything felt authentic."
+    },
+    {
+        "type":"core_belief",
+        "topic":"Career",
+        "content":"Yeah that would be getting rid of the world from politicians like if I could achieve that dream which for sure I cannot then I would be happy because nowadays there are no real politicians who want to change the world for better everyone now just wants to become rich and benefit themself and nothing else. I would just make them either somehow delete from society as a job or we would just evolve maybe I think that would make me at ease."
+    }
 
 
     
