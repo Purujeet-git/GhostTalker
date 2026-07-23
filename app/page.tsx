@@ -11,14 +11,15 @@ interface EmotionData {
 }
 
 export default function Home() {
-  const [input, setInput] = useState<string>('');
+  const [inputA, setInputA] = useState<string>('');
+  const [inputB, setInputB] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [history, setHistory] = useState<EmotionData[]>([]);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!input.trim()) return;
+    if (!inputA.trim() || !inputB.trim()) return;
 
     setIsLoading(true);
 
@@ -28,7 +29,7 @@ export default function Home() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({ messageA: inputA, messageB: inputB }),
       });
 
       if (!response.ok) throw new Error('Network response was not ok');
@@ -48,15 +49,17 @@ export default function Home() {
         message: aiText 
       }]);
 
-      const blob = await response.blob();
-      const url = URL.createObjectURL(blob);
-
-      if (audioRef.current) {
-        audioRef.current.src = url;
-        audioRef.current.play();
+      // BROWSER VOICE: Safely triggering built-in TTS and ignoring the empty backend buffer
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel(); // Stops previous speech if you send a new message quickly
+        const utterance = new SpeechSynthesisUtterance(aiText);
+        utterance.rate = 0.95; 
+        utterance.pitch = valence > 0 ? 1.2 : 0.8; 
+        window.speechSynthesis.speak(utterance);
       }
       
-      setInput('');
+      setInputA('');
+      setInputB('');
     } catch (error) {
       console.error('Error fetching audio:', error);
     } finally {
@@ -90,19 +93,28 @@ export default function Home() {
           </div>
           
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <textarea
-              value={input}
-              onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setInput(e.target.value)}
-              placeholder="Ask your clone anything..."
-              className="w-full p-4 h-32 resize-none rounded-md bg-[#121212] border border-[#2a2a2a] text-white focus:outline-none focus:border-blue-500 transition-colors"
-              disabled={isLoading}
-            />
+            <div className="flex flex-col lg:flex-row gap-4">
+              <textarea
+                value={inputA}
+                onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setInputA(e.target.value)}
+                placeholder="Partner A: Tell me your side of the conflict..."
+                className="w-full p-4 h-32 resize-none rounded-md bg-[#121212] border border-[#2a2a2a] text-white focus:outline-none focus:border-blue-500 transition-colors"
+                disabled={isLoading}
+              />
+              <textarea
+                value={inputB}
+                onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setInputB(e.target.value)}
+                placeholder="Partner B: Tell me your side of the conflict..."
+                className="w-full p-4 h-32 resize-none rounded-md bg-[#121212] border border-[#2a2a2a] text-white focus:outline-none focus:border-blue-500 transition-colors"
+                disabled={isLoading}
+              />
+            </div>
             <button
               type="submit"
               disabled={isLoading}
               className="w-full py-4 bg-white text-black font-semibold rounded-md hover:bg-gray-200 disabled:opacity-50 transition-colors"
             >
-              {isLoading ? 'Retrieving Memories & Processing...' : 'Transmit Data'}
+              {isLoading ? 'Retrieving Frameworks & Mediating...' : 'Analyze Conflict'}
             </button>
           </form>
 
@@ -138,8 +150,6 @@ export default function Home() {
             <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-4 -rotate-90 text-[10px] text-gray-500 uppercase">Positive</div>
           </div>
         </div>
-
-        <audio ref={audioRef} className="hidden" />
       </div>
     </main>
   );

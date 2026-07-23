@@ -19,7 +19,7 @@ if (pineconeApiKey) {
  */
 async function createEmbedding(text: string): Promise<number[]> {
   const response = await ai.models.embedContent({
-    model: 'gemini-embedding-001',
+    model: 'embedding-001', // Safest fallback: Always 768 dimensions and globally available
     contents: text,
   });
   
@@ -31,9 +31,9 @@ async function createEmbedding(text: string): Promise<number[]> {
 }
 
 /**
- * Retrieves relevant memories and behavioral traits from Pinecone based on the user's message.
+ * Retrieves relevant memories and behavioral traits from Pinecone based on the user's message AND the target Persona ID.
  */
-export async function retrievePersonaContext(userMessage: string): Promise<string> {
+export async function retrievePersonaContext(userMessage: string, personaId: string): Promise<string> {
   // Fallback if Pinecone isn't set up yet
   if (!pineconeIndex) {
     console.warn("Pinecone API key missing or index not initialized. Skipping RAG retrieval.");
@@ -45,10 +45,14 @@ export async function retrievePersonaContext(userMessage: string): Promise<strin
     const queryVector = await createEmbedding(userMessage);
 
     // 2. Query the vector database for the top 5 most relevant pieces of information
+    // MULTI-USER UPGRADE: We now filter by the specific persona!
     const queryResponse = await pineconeIndex.query({
       vector: queryVector,
       topK: 5,
       includeMetadata: true, 
+      filter: { 
+        personaId: personaId // <-- THE MAGIC KEY: This prevents memories from mixing!
+      }
     });
 
     // 3. Separate the retrieved data into Categories

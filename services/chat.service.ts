@@ -27,14 +27,15 @@ Respond EXACTLY with this JSON structure:
 `;
 
 /**
- * Processes a user message, retrieves context, queries the LLM for text and emotion,
+ * Processes two user messages, retrieves context, queries the LLM for text and emotion,
  * and requests the corresponding audio stream.
  */
-export async function processChatMessage(userMessage: string) {
+export async function processChatMessage(messageA: string, messageB: string) {
   try {
-    // 1. Retrieve relevant memories/traits from Vector DB (RAG)
-    // (If you haven't fully set up Pinecone yet, this will just return a fallback string)
-    const context = await retrievePersonaContext(userMessage);
+    const combinedMessage = `Partner A's Perspective:\n${messageA}\n\nPartner B's Perspective:\n${messageB}`;
+
+    // 1. Retrieve relevant memories/traits from Vector DB (RAG) using the combined conflict
+    const context = await retrievePersonaContext(combinedMessage, "therapist-001");
     
     // Combine base prompt with retrieved context
     const dynamicPrompt = `${SYSTEM_PROMPT}\n\n${context}`;
@@ -42,7 +43,7 @@ export async function processChatMessage(userMessage: string) {
     // 2. Get the JSON response from Gemini
     const response = await ai.models.generateContent({
       model: 'gemini-2.5-flash', // Using 2.5 flash for speed
-      contents: userMessage,
+      contents: combinedMessage,
       config: {
         systemInstruction: dynamicPrompt,
         // Force the model to return valid JSON
@@ -62,9 +63,15 @@ export async function processChatMessage(userMessage: string) {
     const aiTextResponse = aiData.text;
     const { valence, arousal } = aiData.emotion;
 
-    // 3. Determine the correct Voice ID and generate audio
+    // 3. Determine the correct Voice ID and generate audio safely
     const voiceId = determineVoiceId(valence, arousal);
-    const audioBuffer = await generateAudioStream(aiTextResponse, voiceId, valence, arousal);
+    let audioBuffer = new ArrayBuffer(0);
+    
+    try {
+        audioBuffer = await generateAudioStream(aiTextResponse, voiceId, valence, arousal);
+    } catch (voiceError) {
+        console.warn("Voice generation failed, continuing with text only:", voiceError);
+    }
 
     // 4. Return everything needed by the route handler
     return {
